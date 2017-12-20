@@ -116,6 +116,7 @@ def PLR(arr, epsilon):
 
     if type(lines) != list:
         plr_values = lines(xx)
+        points = [0]
         
     else:
         plr_values = np.piecewise(xx, [xx >= point for point in points], lines)
